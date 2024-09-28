@@ -1,0 +1,26 @@
+GET http://localhost:5011/games
+
+###
+GET http://localhost:5011/games/2
+###
+POST http://localhost:5011/games
+Content-Type: application/json
+
+{
+    "Name": "Final Fantasy 14",
+    "GenreId": 2,
+    "Price": 49.99,
+    "ReleaseDate": "2010-05-07"
+}
+###
+PUT http://localhost:5011/games/2
+Content-Type: application/json
+
+{
+    "name": "FIFA 23",
+    "GenreId": 1,
+    "price": 69.99,
+    "releaseDate": "2022-05-15"
+  }
+###
+DELETE http://localhost:5011/games/3
